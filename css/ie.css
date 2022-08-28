@@ -1,0 +1,12 @@
+.camera_wrap .camera_pag .camera_pag_ul li{
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent,
+.camera_wrap .camera_pag .camera_pag_ul li:hover{
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+a[data-type='lightbox']:hover img{
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}

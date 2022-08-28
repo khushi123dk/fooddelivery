@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/TMForm.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative; background: url(images/header_bg.png) repeat bottom'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <h1>
+                            <a href="./">Salsa</a>
+                        </h1>
+
+                        <div class="slogan">european restaurant</div>
+                    </div>
+
+                    <nav class="put-right">
+                        <ul class="sf-menu">
+                            <li><a href="./"> Main page </a></li>
+                            <li><a href="index-1.html">What’s On</a></li>
+                            <li>
+                                <a href="index-2.html">Menus</a>
+                                <ul>
+                                    <li><a href="#">Dolore ipsu</a></li>
+                                    <li><a href="#">Consecte</a>
+                                        <ul>
+                                            <li><a href="#">Dolore ipsu</a></li>
+                                            <li><a href="#">Consecte</a></li>
+                                            <li><a href="#">Elit Conseq</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Elit Conseq</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index-3.html">About</a></li>
+                            <li class="current"><a href="index-4.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+
+    <div class="wrap_7 wrap_8">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <h2 class="header_3 color_6">contact us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_9">
+                    <iframe class="map_2"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094"
+                            ></iframe>
+                </div>
+                <div class="grid_3">
+                    <address class="color_8">
+                        <p class="text_5 color_7">
+                            9863 - 9867 Mill Road, <br/>
+                            Cambridge, MG09 99HT.
+                        </p>
+
+                        <dl>
+                            <dt>Freephone:</dt>
+                            <dd>+1 800 559 6580</dd>
+                        </dl>
+                        <dl>
+                            <dt>Telephone:</dt>
+                            <dd>+1 800 603 6035</dd>
+                        </dl>
+                        <dl>
+                            <dt>FAX:</dt>
+                            <dd>+1 800 889 9898</dd>
+                        </dl>
+
+                        <p>E-mail: <a href="#"> mail@demolink.org</a></p>
+                    </address>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap_7 wrap_8">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <h2 class="header_4 color_6">feedback</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_12">
+                    <form id="contact-form">
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+                            <div class="row">
+                                <div class="grid_4">
+                                    <label class="name">
+                                        <input type="text" name="name" placeholder="Your Name:" value=""
+                                               data-constraints="@Required @JustLetters"/>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid name.</span>
+                                    </label>
+                                </div>
+                                <div class="grid_4">
+
+                                    <label class="phone">
+                                        <input type="text" name="phone" placeholder="Telephone:" value=""
+                                               data-constraints="@JustNumbers"/>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid phone.</span>
+                                    </label>
+                                </div>
+                                <div class="grid_4">
+                                    <label class="email">
+                                        <input type="text" name="email" placeholder="E-mail:" value=""
+                                               data-constraints="@Required @Email"/>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid email.</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="grid_12">
+                                    <label class="message">
+                                        <textarea name="message" placeholder="Message:"
+                                                  data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*The message is too short.</span>
+                                    </label>
+
+                                    <div class="btn-wrapper">
+                                        <a class="btn_2" href="#" data-type="submit">Submit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="info put-left">
+                    <a href="./">SALSA</a>
+                    © <span id="copyright-year"></span>
+                    • <a href="index-5.html">Privacy Policy</a>
+                </p>
+
+                <ul class="social-list put-right">
+                    <li><a class="fa fa-facebook" href="#"></a></li>
+                    <li><a class="fa fa-twitter" href="#"></a></li>
+                    <li><a class="fa fa-rss" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
